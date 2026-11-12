@@ -1,0 +1,79 @@
+Affected resource - win11-adms 
+User Response - Acknowledged by Muskan Gupta
+Report to - windows Team(Devendiran balan)
+State of the Resource - Stopped
+alert rule name - alr-vm-available-uksouth-8b1f68512186a80a
+alert condition - VmAvailabilityMetric < 0.8
+Cause of the alert - vm threshold < 80 so it may stopped or not available
+resource group - rg-avd-adms-p-uks-001
+Signal type - metric
+
+
+rg-avd-powerfactory-p-uks-001
+rg-avd-admin-p-uks-001
+
+Name - upcoming purge
+Affected resource - ukpnrecoveryvault 
+User Response - New
+Report t0 - windows Team(Devendiran balan)
+State of the Resource - Stopped
+alert rule name - none
+alert condition - none
+Cause of the alert - Backup data for this backup item will be deleted with in 2 days
+resource group - rg-avd-adms-p-uks-001
+signal type - log
+
+Affected resource - dsodlprod01 
+User Response - New
+Report t0 - windows Team(Devendiran balan)
+State of the Resource - Stopped
+alert rule name - none
+alert condition - none
+Cause of the alert - Availability
+resource group - ukpn-prod-edm
+signal type - Metric
+Note - dont have to report because it back to normal 
+
+vmavdadms-1 to 23 they acknowledged and alos they only do monitoring for mrg 8 to 9 they doesn't repond to anyother alerts beyond this time
+
+
+Affected resource - ukpnbackupvlt
+User Response - Acknowledged
+Report to - DB team(thamarai)
+State of the Resource - failed
+alert rule name - none
+alert condition - none
+Cause of the alert - backup resouse is failed
+resource group - ukpn-prod-edm
+signal type - Log
+
+Affected resource - ukpn-we-agw
+User Response - New
+Report to - APPlication team
+State of the Resource - -NA-
+alert rule name - SAP Sourcing - AGW - Failed Connection
+alert condition - none
+Cause of the alert - Possible causes include:
+- A backend server being unavailable or unhealthy.
+- A connection failure between the gateway and the backend.
+- A timeout or another request-processing problem.
+- A configuration issue affecting routing or connectivity.
+resource group - ukpn-prod-edm
+signal type - Metric
+
+Affected resource - ukpn-nv-status-ms 
+User Response - Acknowledged
+Report to - network vision APPlication team
+State of the Resource - -NA-
+alert rule name - alr-sites-walin-westeurope-slots-Http403-b9368e2d1026f6fa-ukpn-nv-status-ms
+alert condition - http403 crossed > 5
+Cause of the alert - 
+A user is authenticated but lacks the required permissions.
+App Service access restrictions or IP allowlists block a request.
+Authentication or authorization settings are misconfigured.
+A client, integration, or automated process is sending requests that are not permitted.
+resource group - ukpn-prod-edm
+signal type - Metric
+
+
+
